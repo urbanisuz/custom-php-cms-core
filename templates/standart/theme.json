@@ -1,0 +1,67 @@
+{
+  "name": "Default Theme",
+  "version": "1.0.0",
+  "author": "Developer",
+  "description": "Стандартная тема оформления для CMS",
+  "settings": [
+    {
+      "group": "layout",
+      "key": "show_left_column",
+      "name": "Показывать левую колонку",
+      "value": "1"
+    },
+    {
+      "group": "layout",
+      "key": "show_right_column",
+      "name": "Показывать правую колонку",
+      "value": "0"
+    },
+    {
+      "group": "design",
+      "key": "container_fluid",
+      "name": "Широкий контейнер (Fluid)",
+      "value": "0"
+    }
+  ],
+  "templates": {
+    "index": "index.php",
+    "pages": {
+      "default": "pages/default.php"
+    },
+    "category": {
+      "main": "category/category.php",
+      "grid": "category/grid.php",
+      "list": "category/list.php"
+    },
+    "product": {
+      "item": "product/item.php",
+      "grid_item": "product/grid_item.php",
+      "list_item": "product/list_item.php"
+    },
+    "service": {
+      "header": "service/header.php",
+      "footer": "service/footer.php",
+      "breadcrumbs": "service/breadcrumbs.php",
+      "left_column": "service/left_column.php",
+      "right_column": "service/right_column.php"
+    }
+  },
+  "pages": [
+    {
+      "title": "Главная страница",
+      "keyword": "",
+      "query": "",
+      "template": "index.php",
+      "in_menu": true,
+      "menu_order": 10
+    },
+    {
+      "title": "Каталог",
+      "keyword": "catalog",
+      "query": "product/category&category_id=0",
+      "template": "category/category.php",
+      "in_menu": true,
+      "menu_order": 20
+    }
+  ]
+}
